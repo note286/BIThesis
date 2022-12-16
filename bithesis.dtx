@@ -2229,7 +2229,7 @@
 \RequirePackage{tikz}
 \RequirePackage{etoolbox}
 % Hide color and border in hyperref.
-\RequirePackage[hidelinks,bookmarksnumbered]{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \RequirePackage{xcolor}
 \RequirePackage{caption}
 \RequirePackage{array}
@@ -3594,7 +3594,6 @@
         \chapter{\c_@@_label_abstract_tl}
       } {
         \chapter*{\c_@@_label_abstract_tl}
-        \currentpdfbookmark{\c_@@_label_abstract_tl}{ch:abstract}
       }
     }
     \vspace*{1mm}
@@ -3665,7 +3664,6 @@
         \chapter{\c_@@_label_abstract_en_tl}
       } {
         \chapter*{\c_@@_label_abstract_en_tl}
-        \currentpdfbookmark{\c_@@_label_abstract_en_tl}{ch:abstract:en}
       }
     }
   }
@@ -4036,7 +4034,7 @@
 % \end{environment}
 
 % \begin{environment}{symbols}
-% 生成主要术语对照表。
+% 生成主要术语对照包。
 %    \begin{macrocode}
 \NewDocumentEnvironment {symbols} {}
   {
@@ -4044,7 +4042,6 @@
       \chapter{\c_@@_label_symbols_tl}
     } {
       \chapter*{\c_@@_label_symbols_tl}
-      \currentpdfbookmark{\c_@@_label_symbols_tl}{ch:symbols}
     }
     \zihao{-4}
     \begin{itemize}[
